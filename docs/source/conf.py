@@ -37,4 +37,7 @@ html_theme_options = {
 }
 
 # Rinoh PDF generation config
-rinoh_documents = [dict(doc='index',target='book',template='custom_template.rst')]
+rinoh_documents = [dict(doc='index',
+                        target='log_book',
+                        toctree_only= True,
+                        template='custom_template.rst')]

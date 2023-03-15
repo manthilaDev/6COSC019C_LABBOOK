@@ -29,3 +29,8 @@ sphinx-build -b rinoh docs/source/ docs/build/_rinoh
 
 Tall Image Resizing loop in Rinoh [Issue](https://github.com/brechtm/rinohtype/issues/351)
 > Setting Screenshot image Size 500X250 will allow you to get arround this
+
+Using a image resizing tool like [magick](https://imagemagick.org) will do the trick.
+```
+convert img_01.png -resize 500x250 -normalize -density 180  img_01_size.png
+```
