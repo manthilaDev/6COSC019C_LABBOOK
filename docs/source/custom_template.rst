@@ -1,0 +1,30 @@
+[TEMPLATE_CONFIGURATION]
+name = custom_template
+template = book
+
+parts =contents
+    
+stylesheet = sphinx_base14
+language = en
+
+[SectionTitles]
+contents = 'Contents'
+
+[AdmonitionTitles]
+caution = 'Careful!'
+warning = 'Please be warned'
+
+[VARIABLES]
+paper_size = A4
+margin_left = 0cm
+
+[front_matter]
+page_number_format = lowercase roman
+end_at_page = left
+
+[contents]
+page_number_format = number
+
+
+[title_page]
+top_margin = 2cm
