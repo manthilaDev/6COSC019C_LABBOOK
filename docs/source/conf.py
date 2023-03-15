@@ -28,3 +28,13 @@ exclude_patterns = []
 
 html_theme = 'piccolo_theme'
 html_static_path = ['_static']
+
+# Piccolo theme specific config 
+html_logo = './img/logo.png'
+html_theme_options = {
+    # Note how we can include links:
+    "banner_text": 'Please note the content volatile and not intented as full proof solutions'
+}
+
+# Rinoh PDF generation config
+rinoh_documents = [dict(doc='index',target='book',template='custom_template.rst')]

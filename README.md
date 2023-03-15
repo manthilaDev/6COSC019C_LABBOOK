@@ -1,18 +1,31 @@
 # Instructions 
 
-- Utilize isolated Python enviroment (venv)
+Utilize isolated Python enviroment (venv).
+This is a standrad Sphinix project with added document generations extensions. 
 
 
-### To start Auto Build Serve 
+### To start auto-build serve 
 
-
-```
-sphinx-autobuild docs/source/ docs/build/
-```
-
-### To Build DOCX 
-
+This will start the web serve.
+Sensitive to changes and changes can be previewed live in localhost:8000
 
 ```
-sphinx-build -b docx docs/source/ docs/build/
+sphinx-autobuild docs/source/ docs/build/_web
 ```
+
+### To build .docx 
+Run the following command to generate .docx file in `docs/build/_docx`
+
+```
+sphinx-build -b docx docs/source/ docs/build/_docx
+```
+### To build .pdf
+
+Run the following command to generate .pdf file in `docs/build/_rinoh`
+```
+sphinx-build -b rinoh docs/source/ docs/build/_rinoh
+```
+## Know Issues 
+
+Tall Image Resizing loop in Rinoh [Issue](https://github.com/brechtm/rinohtype/issues/351)
+> Setting Screenshot image Size 500X250 will allow you to get arround this
