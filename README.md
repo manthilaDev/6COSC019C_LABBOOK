@@ -12,6 +12,11 @@ Sensitive to changes and changes can be previewed live in localhost:8000
 ```
 sphinx-autobuild docs/source/ docs/build/_web
 ```
+### To build Single Page HTML
+```
+sphinx-build -b singlehtml docs/source/ docs/build/_singleHtml
+```
+
 
 ### To build .docx 
 Run the following command to generate .docx file in `docs/build/_docx`
@@ -19,6 +24,16 @@ Run the following command to generate .docx file in `docs/build/_docx`
 ```
 sphinx-build -b docx docs/source/ docs/build/_docx
 ```
+Otherwise you can use utility like [Pandoc](https://pandoc.org).
+
+```
+sphinx-build -b singlehtml docs/source/ docs/build/_singleHtml
+cd docs/build/_singleHtml
+pandoc -o index.docx index.html
+```
+
+
+
 ### To build .pdf
 
 Run the following command to generate .pdf file in `docs/build/_rinoh`

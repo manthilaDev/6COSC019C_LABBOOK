@@ -36,8 +36,8 @@ html_theme_options = {
 myst_enable_extensions = [
     "amsmath",
     "attrs_inline",
-    "html_image"
-    ]
+    "html_image",
+    "colon_fence"]
 # Rinoh PDF generation config
 rinoh_documents = [dict(doc='index',
                         target='log_book',
