@@ -19,10 +19,6 @@ extensions = ['myst_parser',
 templates_path = ['_templates']
 exclude_patterns = []
 
-
-
-
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -36,6 +32,12 @@ html_theme_options = {
     "banner_text": 'Please note the content volatile and not intented as full proof solutions'
 }
 
+# myst_configurations to add Images to documents
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "html_image"
+    ]
 # Rinoh PDF generation config
 rinoh_documents = [dict(doc='index',
                         target='log_book',

@@ -34,3 +34,4 @@ Using a image resizing tool like [magick](https://imagemagick.org) will do the t
 ```
 convert img_01.png -resize 500x250 -normalize -density 180  img_01_size.png
 ```
+Or relaying on html image emmbeddings will be the way to go.

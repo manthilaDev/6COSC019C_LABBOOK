@@ -10,5 +10,4 @@ Following virtual machines are initially configured.
 
 Downloading university provided VM Virtual Machines [Link](https://download.ecs.westminster.ac.uk/VirtualMachines/)
 
-![ScreenShot1](./assets/img_01_size.png)
-
+<img src="./assets/img_01.png" alt="fishy" width="550px">
