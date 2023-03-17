@@ -30,8 +30,7 @@ when required we will look into configuring rest of the images.
 
 Downloading university provided VM Virtual Machines [UOW Intranet](https://download.ecs.westminster.ac.uk/VirtualMachines/)
 
-
-<img src="./assets/img_01.png" alt="UOW VM Images" width="550px">
+![img_01.png](./img/week_01_img_01.png)
 
 ### Importing OVF files 
 
@@ -47,7 +46,7 @@ Shared virtual box OVF (Open Virtualization Format) files will be imported as in
 |OWASP| root    | owaspbwa|
 |Win-7|admin    |Passw0rd!|
 
-<img src="./assets/img_02.png" alt="VM import" width="550px">
+![img_02.png](./img/week_01_img_02.png)
 
 ## Network Setup
 
@@ -64,8 +63,7 @@ Using NAT options to enable Internet access to Virtual Machines
 - Under network Section in settings Select the Adapter
 - Select `Attached to` as `NAT`
 
-<img src="./assets/img_03.png" alt="VM NAT Option" width="550px">
-
+![week_01_img_03.png](./img/week_01_img_03.png)
 ### Isolated Network
 
 :::{tip}
@@ -81,7 +79,7 @@ Using Host Only options to enable Internet access to Virtual Machines
 
 If needed refer to [Configuring Network Adapters](#configuring-network-adapters) Section on how to setup new network adapter.
 
-<img src="./assets/img_05.png" alt="VM Host-Only Option" width="550px">
+![img_05.png](./img/week_01_img_05.png)
 
 ### Configuring Network Adapters
 
@@ -94,7 +92,7 @@ If needed refer to [Configuring Network Adapters](#configuring-network-adapters)
 Optionally if required DHCP server can be enabled if needed.
 :::
 
-<img src="./assets/img_04.png" alt="VM Custom Network Option" width="550px">
+![img_04.png](./img/week_01_img_04.png)
 
 ## Updating Linux (Debian Based)
 
@@ -108,7 +106,7 @@ You will be using `sudo` to conduct a super-user level task.
 This operation requires access to Internet. Using [NAT](#internet-connected) network adapter will enable this.
 :::
 
-```{code-block}bash
+```bash
 sudo apt-get update     # Update the repository
 sudo apt-get upgrade    # Upgrade the system
 ```
@@ -121,7 +119,7 @@ In certain cases if the network interface is not visible try the following.
 This assumes your system is utilizing System.d
 :::
 
-```{code-block}bash
+```bash
 sudo service network-manager restart
 ```
 ## Testing connectivity among VM's in a Isolated Network  
@@ -147,14 +145,14 @@ Consider Host-only adapter
 Let's simulate attacker machine to host communication
 From kali machine `ping` the owasp machine
 
-```{code-block}bash
+```bash
 ping 192.168.56.102
 ```
 simulate host machine to attacker communication
 From OWASP machine `ping` the Kali machine
 
-```{code-block}bash
+```bash
 ping 192.168.56.101
 ```
 
-<img src="./assets/img_06.png" alt="Testing Connection" width="550px">
+![img_06.png](./img/week_01_img_06.png)

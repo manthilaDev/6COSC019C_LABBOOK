@@ -32,14 +32,23 @@ cd docs/build/_singleHtml
 pandoc -o index.docx index.html
 ```
 
-
-
 ### To build .pdf
 
 Run the following command to generate .pdf file in `docs/build/_rinoh`
 ```
 sphinx-build -b rinoh docs/source/ docs/build/_rinoh
 ```
+
+### Pypandoc Workflow
+This is method uses a [Pypandoc](https://github.com/JessicaTegner/pypandoc) wrapper for[Pandoc](https://pandoc.org)
+
+> Generates the file at ./docs/build/_pandoc
+
+```
+cd ./docs/source/
+python app.py
+```
+
 ## Know Issues 
 
 Tall Image Resizing loop in Rinoh [Issue](https://github.com/brechtm/rinohtype/issues/351)
@@ -50,3 +59,8 @@ Using a image resizing tool like [magick](https://imagemagick.org) will do the t
 convert img_01.png -resize 500x250 -normalize -density 180  img_01_size.png
 ```
 Or relaying on html image emmbeddings will be the way to go.
+
+```
+pandoc week_01.md -f markdown -o Lab_Log_Book_W1761889.docx
+
+```
