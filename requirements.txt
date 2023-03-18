@@ -20,6 +20,7 @@ myst-parser==1.0.0
 packaging==23.0
 piccolo-theme==0.14.0
 Pygments==2.14.0
+pypandoc==1.11
 python-docx==0.8.11
 PyYAML==6.0
 recommonmark==0.7.1
