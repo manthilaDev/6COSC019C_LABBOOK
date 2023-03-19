@@ -9,6 +9,7 @@ Lab Exercise Log Book (6COSC019W)
 .. toctree::
    week_01.md
    week_02.md
+   week_03.md
    :maxdepth: 2
    :caption: Contents:
 

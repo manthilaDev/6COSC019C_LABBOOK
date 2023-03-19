@@ -1,4 +1,4 @@
-# Week 01
+# Week 01 (Lab 01)
 
 ## Lab Setup 
 
